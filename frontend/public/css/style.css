@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #4e54c8;
+    --secondary-color: #8f94fb;
+    --accent-color: #ff6b6b;
+    --background-color: #f5f7fa;
+    --text-color: #333;
+    --card-background: #fff;
+    --success-color: #2ecc71;
+    --error-color: #e74c3c;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+@media (min-width: 768px) {
+    main {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.coupon-box, .info-box {
+    background-color: var(--card-background);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.coupon-box h2, .info-box h3 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.instruction {
+    margin-bottom: 25px;
+}
+
+.claim-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.claim-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(78, 84, 200, 0.4);
+}
+
+.claim-btn:active {
+    transform: translateY(0);
+}
+
+.claim-btn:disabled {
+    background: #cccccc;
+    cursor: not-allowed;
+    transform: none;
+    box-shadow: none;
+}
+
+.result {
+    margin-top: 30px;
+}
+
+.coupon-card, .error-card {
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.coupon-card {
+    background-color: rgba(46, 204, 113, 0.1);
+    border: 2px dashed var(--success-color);
+}
+
+.error-card {
+    background-color: rgba(231, 76, 60, 0.1);
+    border: 2px solid var(--error-color);
+}
+
+.coupon-details {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.coupon-code span {
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--primary-color);
+}
+
+.coupon-value span, .coupon-desc span {
+    font-weight: bold;
+}
+
+.timer-message {
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #777;
+    font-size: 0.9rem;
+}

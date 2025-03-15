@@ -1,0 +1,12 @@
+{
+    "name": "coupon-app-frontend",
+    "version": "1.0.0",
+    "description": "Frontend for coupon distribution application",
+    "private": true,
+    "scripts": {
+      "build": "echo \"No build step required for this simple frontend\" && exit 0",
+      "watch": "echo \"No watch process required for this simple frontend\" && exit 0"
+    },
+    "dependencies": {},
+    "devDependencies": {}
+  }

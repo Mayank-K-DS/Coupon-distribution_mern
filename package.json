@@ -1,0 +1,25 @@
+{
+    "name": "coupon-distribution-app",
+    "version": "1.0.0",
+    "description": "A web application for distributing coupons with anti-abuse mechanisms",
+    "main": "backend/server.js",
+    "scripts": {
+      "start": "node backend/server.js",
+      "dev": "nodemon backend/server.js",
+      "seed": "node backend/seedCoupons.js"
+    },
+    "dependencies": {
+      "cookie-parser": "^1.4.6",
+      "cors": "^2.8.5",
+      "dotenv": "^16.0.3",
+      "express": "^4.18.2",
+      "mongoose": "^7.0.3",
+      "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.22"
+    },
+    "engines": {
+      "node": ">=16.0.0"
+    }
+  }

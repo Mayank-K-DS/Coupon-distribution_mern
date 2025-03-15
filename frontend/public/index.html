@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coupon Distribution App</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Coupon Distribution System</h1>
+        </header>
+        
+        <main>
+            <div class="coupon-box">
+                <h2>Claim Your Coupon</h2>
+                <p class="instruction">Click the button below to claim a special discount coupon!</p>
+                
+                <button id="claimBtn" class="claim-btn">Claim Coupon</button>
+                
+                <div id="result" class="result hidden">
+                    <div id="couponCard" class="coupon-card hidden">
+                        <h3>Congratulations!</h3>
+                        <div class="coupon-details">
+                            <p class="coupon-code">Code: <span id="couponCode"></span></p>
+                            <p class="coupon-value">Value: <span id="couponValue"></span></p>
+                            <p class="coupon-desc">Description: <span id="couponDesc"></span></p>
+                        </div>
+                    </div>
+                    
+                    <div id="errorCard" class="error-card hidden">
+                        <h3>Oops!</h3>
+                        <p id="errorMessage"></p>
+                        <p id="timerMessage" class="timer-message"></p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="info-box">
+                <h3>About Our Coupon System</h3>
+                <p>Our coupons are distributed in a fair, round-robin manner to ensure equal opportunity for all visitors.</p>
+                <p>To prevent abuse, each user can only claim one coupon per hour.</p>
+            </div>
+        </main>
+        
+        <footer>
+            <p>&copy; 2025 Coupon Distribution System | All Rights Reserved</p>
+        </footer>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
